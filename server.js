@@ -40,4 +40,4 @@ app.listen(dbconfig.port, function() {
 // Router
 // 기본으로 index.js를 찾기 때문에 
 // require("./routes/index.js")라고 명시
-var routes = require("./postnget.js")(app, pool);
+var routes = require("./postnget.1.js")(app, pool);

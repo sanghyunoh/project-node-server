@@ -83,4 +83,3 @@ var returnResult = function(err, res) {
     }
     return result;
 }
-

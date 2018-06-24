@@ -1,0 +1,5 @@
+git init 
+git remote add origin https://github.com/sanghyunoh/project-node-server.git
+git add .
+git commit -m "first commit"
+git push -u origin master

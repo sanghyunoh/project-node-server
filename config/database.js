@@ -6,6 +6,7 @@ var config = {
         db: "server_db",
         username: "root",
         password: "",
+        multipleStatements: true
     }
 }
  
