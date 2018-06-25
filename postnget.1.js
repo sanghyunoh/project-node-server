@@ -273,7 +273,7 @@ module.exports = function(app, pool) {
      app.get("/orderinfo",function(req,res){
          var result = {};
          pool.getConnection(function(err, conn) {
-             var sql = "SELECT * from salesinfo;";
+             var sql = "SELECT productID, productname, count, option1, option2, option3, price from salesinfo;";
         	 conn.query(sql, function(err, rows) {
                 var result = returnResult(err, res);
                 if (rows) {
@@ -293,7 +293,7 @@ module.exports = function(app, pool) {
          var startdate = array["startdate"];
          var enddate = array["enddate"];
          pool.getConnection(function(err, conn) {
-             var sql = "SELECT * from salesinfo where orderdate between '" + startdate + "' AND '" + enddate +"';";
+             var sql = "SELECT productID, productname, count, option1, option2, option3, price from salesinfo where orderdate between '" + startdate + "' AND '" + enddate +"';";
         	 conn.query(sql, function(err, rows) {
                 var result = returnResult(err, res);
                 if (rows) {
